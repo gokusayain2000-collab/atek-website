@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ATEK International</title>
+
+<style>
+:root{
+  --navy:#071a2b;
+  --gold:#C9A646;
+  --light:#f5f7fa;
+  --muted:#6b7a8a;
+}
+
+*{box-sizing:border-box;}
+
+body{
+  margin:0;
+  font-family:'Times New Roman', Georgia, serif;
+  background:var(--light);
+  color:var(--navy);
+  line-height:1.6;
+}
+
+/* HEADER */
+header{
+  position:fixed;
+  top:0;
+  width:100%;
+  background:var(--navy);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:14px 50px;
+ z-index:1000;
+  border-bottom:1px solid rgba(201,166,70,0.25);
+}
+
+header img{height:42px;}
+
+nav a{
+  color:white;
+  margin-left:22px;
+  text-decoration:none;
+  font-size:13px;
+  letter-spacing:0.6px;
+}
+nav a:hover{color:var(--gold);}
+
+/* HERO */
+.hero{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  background:linear-gradient(rgba(7,26,43,0.96), rgba(7,26,43,0.96));
+  color:white;
+  position:relative;
+  padding:0 20px;
+}
+
+.hero-logo{
+  width:210px;
+  margin-bottom:25px;
+}
+
+.hero h1{
+  font-size:54px;
+  margin:0;
+  letter-spacing:1px;
+}
+.hero p{
+  max-width:780px;
+  font-size:19px;
+  margin-top:18px;
+  color:#e7eef6;
+}
+
+.btn{
+  margin-top:25px;
+  padding:12px 30px;
+  background:var(--gold);
+  color:var(--navy);
+  text-decoration:none;
+  font-weight:bold;
+  border:1px solid var(--gold);
+}
+.btn:hover{background:transparent;color:var(--gold);}
+
+/* TRUST BAR */
+.trust{
+  background:var(--navy);
+  color:white;
+  text-align:center;
+  padding:22px;
+  font-size:13px;
+  letter-spacing:0.6px;
+}
+
+/* SECTIONS */
+section{
+  max-width:1150px;
+  margin:auto;
+  padding:90px 40px;
+}
+.section-title{
+  font-size:28px;
+  margin-bottom:25px;
+  border-bottom:2px solid var(--gold);
+  display:inline-block;
+  padding-bottom:6px;
+}
+
+/* CARDS */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:22px;
+  margin-top:25px;
+}
+
+.card{
+  background:white;
+  padding:22px;
+  border-left:4px solid var(--gold);
+  transition:0.3s ease;
+}
+.card:hover{transform:translateY(-5px);}
+.card h3{margin-top:0;}
+
+/* SOFT BACKGROUND SECTIONS */
+.soft{
+  background:#ffffff;
+  border-top:1px solid #e6edf5;
+  border-bottom:1px solid #e6edf5;
+}
+
+/* CONTACT BOX */
+.contact-box{
+  background:white;
+  border-left:4px solid var(--gold);
+  padding:25px;
+  margin-top:20px;
+}
+footer{
+  background:var(--navy);
+  color:white;
+  text-align:center;
+  padding:30px 20px;
+  font-size:14px;
+  border-top:1px solid rgba(201,166,70,0.25);
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <img src="logo.png" alt="ATEK Logo">
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#sectors">Sectors</a>
+    <a href="#model">Operations</a>
+    <a href="#services">Services</a>
+    <a href="#policies">Compliance</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <img src="logo.png" class="hero-logo" alt="ATEK Logo" />
+  <h1>Delivering Integrity. Securing Trust.</h1>
+  <p>ATEK International operates with structured governance, compliance enforcement, and disciplined administrative oversight across public sector programs.</p>
+  <a class="btn" href="#about">Learn More</a>
+</section>
+
+<div class="trust">
+Federal & Provincial Alignment • Confidential Operations • Compliance Governance
+</div>
+<!-- ABOUT -->
+<section id="about">
+  <h2 class="section-title">About ATEK International</h2>
+  <p>Government contracting and consulting organization focused on compliance systems, administrative governance, and confidential program support.</p>
+
+  <div class="grid">
+    <div class="card"><h3>Integrity</h3><p>Ethical enforcement of standards.</p></div>
+    <div class="card"><h3>Accountability</h3><p>Auditable operational frameworks.</p></div>
+    <div class="card"><h3>Confidentiality</h3><p>Secure handling of sensitive information.</p></div>
+  </div>
+</section>
+
+<!-- SECTORS (OPTION A) -->
+<section id="sectors" class="soft">
+  <h2 class="section-title">Operational Sectors</h2>
+  <div class="grid">
+    <div class="card"><h3>Public Administration</h3><p>Support for structured government workflows and services.</p></div>
+    <div class="card"><h3>Regulatory Compliance</h3><p>Policy enforcement and oversight frameworks.</p></div>
+    <div class="card"><h3>Infrastructure Oversight</h3><p>Monitoring and operational coordination support.</p></div>
+  </div>
+</section>
+
+<!-- OPERATIONS MODEL (OPTION B) -->
+<section id="model">
+  <h2 class="section-title">Organizational Framework</h2>
+  <div class="grid">
+    <div class="card"><h3>Assessment</h3><p>Risk and compliance evaluation.</p></div>
+    <div class="card"><h3>Governance</h3><p>Policy structuring and enforcement.</p></div>
+    <div class="card"><h3>Enforcement</h3><p>Operational control and accountability.</p></div>
+    <div class="card"><h3>Reporting</h3><p>Audit-ready documentation systems.</p></div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="soft">
+  <h2 class="section-title">Core Services</h2>
+  <div class="grid">
+    <div class="card"><h3>Government Program Support</h3><p>Execution support for public-sector initiatives.</p></div>
+    <div class="card"><h3>Policy & Compliance</h3><p>Regulatory alignment and monitoring systems.</p></div>
+    <div class="card"><h3>Administrative Operations</h3><p>Structured workflow optimization.</p></div>
+    <div class="card"><h3>Risk Management</h3><p>Confidentiality and operational risk mitigation.</p></div>
+  </div>
+</section>
+<!-- POLICIES -->
+<section id="policies">
+  <h2 class="section-title">Compliance Framework</h2>
+  <div class="grid">
+    <div class="card"><h3>Disciplinary System</h3><p>Structured escalation: warning → suspension → termination.</p></div>
+    <div class="card"><h3>Confidentiality Rules</h3><p>Strict protection of sensitive and internal data.</p></div>
+    <div class="card"><h3>Social Conduct</h3><p>Policies apply across all professional and informal environments.</p></div>
+    <div class="card"><h3>Manager Accountability</h3><p>Enforcement responsibility and oversight compliance.</p></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="soft">
+  <h2 class="section-title">Contact Information</h2>
+  <div class="contact-box">
+    <p><strong>Phone:</strong> +1 (416) 555-9821</p>
+    <p><strong>Location:</strong> Toronto, ON, Canada – M5V 2T6</p>
+    <p><strong>Email:</strong> communications@atek.com</p>
+  </div>
+</section>
+
+<footer>
+© Atek International – Committed to Integrity & Trust
+</footer>
+
+</body>
+</html>
